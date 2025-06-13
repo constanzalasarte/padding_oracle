@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.seginf.PaddingOracleTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2025-06-13T02:45:43" hostname="clasart-ltmhjca.internal.salesforce.com" time="0.012">
+<testsuite name="org.seginf.PaddingOracleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-06-13T17:29:34" hostname="codespaces-6fc242" time="0.03">
   <properties/>
-  <testcase name="attack should correctly decrypt x2A to expected m2()" classname="org.seginf.PaddingOracleTest" time="0.005"/>
-  <testcase name="attack should work for ciphertext resulting in padding 8()" classname="org.seginf.PaddingOracleTest" time="0.005">
-    <failure message="org.opentest4j.AssertionFailedError: The attacked dX2 for padding 8 should be correct. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: The attacked dX2 for padding 8 should be correct. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at app//org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
-	at app//org.seginf.PaddingOracleTest.attack should work for ciphertext resulting in padding 8(PaddingOracleTest.kt:61)
-	at java.base@21.0.3/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.3/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.3/java.util.ArrayList.forEach(ArrayList.java:1596)
-</failure>
-  </testcase>
-  <testcase name="attack should work for a different known ciphertext (x2)()" classname="org.seginf.PaddingOracleTest" time="0.0"/>
+  <testcase name="attack should work for a different known ciphertext (x2) and a non-zero x1()" classname="org.seginf.PaddingOracleTest" time="0.021"/>
+  <testcase name="attack should correctly decrypt x2A to expected m2()" classname="org.seginf.PaddingOracleTest" time="0.001"/>
+  <testcase name="attack should work for a block with all zero content and padding 8()" classname="org.seginf.PaddingOracleTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

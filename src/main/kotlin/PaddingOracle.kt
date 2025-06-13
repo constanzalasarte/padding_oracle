@@ -3,7 +3,7 @@ package org.seginf
 import kotlin.experimental.xor
 
 class PaddingOracle(private val server: Server) {
-    fun attack(x2: ByteArray): ByteArray {
+    fun attack(x1:ByteArray, x2: ByteArray): ByteArray {
         val blockSize = 8
         val dX2 = ByteArray(blockSize)
         val r = ByteArray(blockSize)
@@ -29,6 +29,10 @@ class PaddingOracle(private val server: Server) {
                 }
             }
         }
-        return dX2
+        val m2 = ByteArray(blockSize)
+        for (i in 0 until blockSize) {
+            m2[i] = (x1[i] xor dX2[i])
+        }
+        return m2
     }
 }

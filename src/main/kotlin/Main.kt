@@ -11,7 +11,7 @@ fun main() {
 
     val x2A = generateX2Attack()
     val paddingOracle = PaddingOracle(server)
-    val m2 = paddingOracle.attack(x2A)
+    val m2 = paddingOracle.attack(x1, x2A)
     println(m2.contentEquals(generateByteArray(intArrayOf(2,3,0,3,2,2,1,2))))
 }
 
